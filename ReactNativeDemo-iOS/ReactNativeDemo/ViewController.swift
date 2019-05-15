@@ -10,10 +10,26 @@ import UIKit
 import React
 
 class ViewController: UIViewController {
-
+    var rootView : RCTRootView?
+    var url : URL?
+    public convenience init(url:URL) {
+        self.init()
+        self.url = url
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = UIColor.white
+        let refreshBtn = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(refresh))
+        navigationItem.rightBarButtonItem = refreshBtn
+        let url = URL(string: "file:///Users/xiebingxing/Desktop/main.jsbundle")
+        let rootView = RCTRootView(bundleURL: url!, moduleName: "RNHighScores", initialProperties: ["scores":[["name":"123","value":"234"] , ]], launchOptions: [:])
+        rootView?.frame = view.frame
+        view.addSubview(rootView!)
+        
+    }
+    
+    @objc func refresh(){
         
     }
 

@@ -3,14 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		73D43470C94B4BB2D53A394C /* Pods_ReactNativeDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0093E55765C0159784C39D7 /* Pods_ReactNativeDemo.framework */; };
 		944E317B228945A100AD394E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944E317A228945A100AD394E /* AppDelegate.swift */; };
 		944E317D228945A100AD394E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944E317C228945A100AD394E /* ViewController.swift */; };
-		944E3180228945A100AD394E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944E317E228945A100AD394E /* Main.storyboard */; };
 		944E3182228945A300AD394E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 944E3181228945A300AD394E /* Assets.xcassets */; };
 		944E3185228945A300AD394E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944E3183228945A300AD394E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -19,7 +18,6 @@
 		944E3177228945A100AD394E /* ReactNativeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactNativeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		944E317A228945A100AD394E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		944E317C228945A100AD394E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		944E317F228945A100AD394E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		944E3181228945A300AD394E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		944E3184228945A300AD394E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		944E3186228945A300AD394E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,7 +44,6 @@
 				D50C8965AE86A0A48036BD7B /* Pods-ReactNativeDemo.debug.xcconfig */,
 				B31934EB98D47EDC57A60691 /* Pods-ReactNativeDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -73,7 +70,6 @@
 			children = (
 				944E317A228945A100AD394E /* AppDelegate.swift */,
 				944E317C228945A100AD394E /* ViewController.swift */,
-				944E317E228945A100AD394E /* Main.storyboard */,
 				944E3181228945A300AD394E /* Assets.xcassets */,
 				944E3183228945A300AD394E /* LaunchScreen.storyboard */,
 				944E3186228945A300AD394E /* Info.plist */,
@@ -151,7 +147,6 @@
 			files = (
 				944E3185228945A300AD394E /* LaunchScreen.storyboard in Resources */,
 				944E3182228945A300AD394E /* Assets.xcassets in Resources */,
-				944E3180228945A100AD394E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,14 +207,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		944E317E228945A100AD394E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				944E317F228945A100AD394E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		944E3183228945A300AD394E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
