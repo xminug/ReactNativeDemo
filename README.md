@@ -12,4 +12,6 @@
 	cd ReactNativeDemo-iOS && pod install
 	
 ### 运行iOS项目
+	进入ReactNativeDemo-iOS 项目，打开xcworkspace 文件，即是一个标准可直接执行的iOS工程，点击运行即可。
+	
 	
