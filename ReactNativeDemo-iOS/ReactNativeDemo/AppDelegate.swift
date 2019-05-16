@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         
-        let viewController = ViewController()
+        let viewController = ViewController(url: URL(string: "http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false")!)
         let navigationController = UINavigationController(rootViewController: viewController)
         window?.rootViewController = navigationController
         

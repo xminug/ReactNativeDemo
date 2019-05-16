@@ -3,10 +3,10 @@ import {AppRegistry, StyleSheet, Text, View} from 'react-native';
 
 class RNHighScores extends React.Component {
   render() {
-    var contents = this.props['scores'].map((score) => (
-      <Text key={score.name}>
-        {score.name}:{score.value}
-        {'\n'}
+    var c = [123,123,323,12,2]
+    var contents = c.map((value) => (
+      <Text>
+        123
       </Text>
     ));
     return (

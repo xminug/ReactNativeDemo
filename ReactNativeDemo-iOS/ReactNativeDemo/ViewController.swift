@@ -12,9 +12,25 @@ import React
 class ViewController: UIViewController {
     var rootView : RCTRootView?
     var url : URL?
+    var bridge:RCTBridge?
+    
     public convenience init(url:URL) {
         self.init()
         self.url = url
+    }
+    
+    func render(){
+        guard let u = url else {
+            return
+        }
+        rootView?.removeFromSuperview()
+        rootView = nil
+        bridge = nil
+        let rootView = RCTRootView(bundleURL: u, moduleName: "RNHighScores", initialProperties: ["scores":[["name":"test","value":"sss"] , ]], launchOptions: [:])
+        rootView?.frame = view.frame
+        bridge = rootView?.bridge
+        view.addSubview(rootView!)
+        
     }
     
     override func viewDidLoad() {
@@ -22,17 +38,13 @@ class ViewController: UIViewController {
         view.backgroundColor = UIColor.white
         let refreshBtn = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(refresh))
         navigationItem.rightBarButtonItem = refreshBtn
-        guard let url = Bundle.main.url(forResource: "main", withExtension: "jsbundle") else {
-            return
+        if (url != nil){
+            render()
         }
-        let rootView = RCTRootView(bundleURL: url, moduleName: "RNHighScores", initialProperties: ["scores":[["name":"123","value":"234"] , ]], launchOptions: [:])
-        rootView?.frame = view.frame
-        view.addSubview(rootView!)
-        
     }
     
     @objc func refresh(){
-        
+        render()
     }
 
 
