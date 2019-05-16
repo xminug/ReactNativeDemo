@@ -22,8 +22,10 @@ class ViewController: UIViewController {
         view.backgroundColor = UIColor.white
         let refreshBtn = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(refresh))
         navigationItem.rightBarButtonItem = refreshBtn
-        let url = URL(string: "file:///Users/xiebingxing/Desktop/main.jsbundle")
-        let rootView = RCTRootView(bundleURL: url!, moduleName: "RNHighScores", initialProperties: ["scores":[["name":"123","value":"234"] , ]], launchOptions: [:])
+        guard let url = Bundle.main.url(forResource: "main", withExtension: "jsbundle") else {
+            return
+        }
+        let rootView = RCTRootView(bundleURL: url, moduleName: "RNHighScores", initialProperties: ["scores":[["name":"123","value":"234"] , ]], launchOptions: [:])
         rootView?.frame = view.frame
         view.addSubview(rootView!)
         

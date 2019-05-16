@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		73D43470C94B4BB2D53A394C /* Pods_ReactNativeDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0093E55765C0159784C39D7 /* Pods_ReactNativeDemo.framework */; };
+		942FF89D228D4EA600C42FBE /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 942FF89C228D4EA600C42FBE /* main.jsbundle */; };
 		944E317B228945A100AD394E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944E317A228945A100AD394E /* AppDelegate.swift */; };
 		944E317D228945A100AD394E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944E317C228945A100AD394E /* ViewController.swift */; };
 		944E3182228945A300AD394E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 944E3181228945A300AD394E /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		942FF89C228D4EA600C42FBE /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		944E3177228945A100AD394E /* ReactNativeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactNativeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		944E317A228945A100AD394E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		944E317C228945A100AD394E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				944E317C228945A100AD394E /* ViewController.swift */,
 				944E3181228945A300AD394E /* Assets.xcassets */,
 				944E3183228945A300AD394E /* LaunchScreen.storyboard */,
+				942FF89C228D4EA600C42FBE /* main.jsbundle */,
 				944E3186228945A300AD394E /* Info.plist */,
 			);
 			path = ReactNativeDemo;
@@ -145,6 +148,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				942FF89D228D4EA600C42FBE /* main.jsbundle in Resources */,
 				944E3185228945A300AD394E /* LaunchScreen.storyboard in Resources */,
 				944E3182228945A300AD394E /* Assets.xcassets in Resources */,
 			);
